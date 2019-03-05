@@ -33,7 +33,7 @@
         "tags": [
           "microwaves"
         ],
-        "operationId": "testfoo1",
+        "operationId": "Create_Microwave",
         "description": "Does some cool action.",
         "parameters": [
           {
@@ -100,7 +100,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
-        "operationId": "testfoo12",
+        "operationId": "Delete_Microwave",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
@@ -154,7 +154,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
-        "operationId": "testfoo13",
+        "operationId": "Get_Microwave",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
@@ -211,7 +211,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
-        "operationId": "testfoo14",
+        "operationId": "Update_Microwave",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
@@ -559,7 +559,7 @@
         "tags": [
           "microwaves"
         ],
-        "operationId": "buttons_ListByMicrowave",
+        "operationId": "Buttons_ListByMicrowave",
         "description": "Does some cool action.",
         "parameters": [
           {
