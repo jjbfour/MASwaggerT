@@ -390,15 +390,6 @@
             "maxLength": 64
           },
           {
-            "name": "buttonName",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": "The microwave name.",
-            "minLength": 3,
-            "maxLength": 64
-          },
-          {
             "$ref": "#/parameters/ApiVersionParameter"
           }
         ],
