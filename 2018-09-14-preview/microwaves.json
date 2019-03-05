@@ -28,7 +28,7 @@
     }
   },
   "paths": {
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/MyCoolTestProvider/testproviders/{testName}/microwaves/{microwaveName}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/MyCoolTestProvider/resourceproviders/{testName}/microwaves/{microwaveName}": {
       "put": {
         "tags": [
           "microwaves"
