@@ -348,6 +348,210 @@
         "consumes": [
           "application/json"
         ]
+      },
+      "delete": {
+        "tags": [
+          "microwaves"
+        ],
+        "description": "Does some cool action.",
+        "operationId": "testfoo22",
+        "parameters": [
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group. The name is case insensitive.",
+            "pattern": "^[-\\w\\._\\(\\)]+$",
+            "minLength": 1,
+            "maxLength": 90
+          },
+          {
+            "name": "testName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The test name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "microwaveName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "buttonName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "My Cool Action Response"
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "get": {
+        "tags": [
+          "microwaves"
+        ],
+        "description": "Does some cool action.",
+        "operationId": "testfoo23",
+        "parameters": [
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group. The name is case insensitive.",
+            "pattern": "^[-\\w\\._\\(\\)]+$",
+            "minLength": 1,
+            "maxLength": 90
+          },
+          {
+            "name": "testName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The test name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "microwaveName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "buttonName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "My Cool Action Response",
+            "schema": {
+              "$ref": "#/definitions/MyCoolActionParameters"
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "patch": {
+        "tags": [
+          "microwaves"
+        ],
+        "description": "Does some cool action.",
+        "operationId": "testfoo24",
+        "parameters": [
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group. The name is case insensitive.",
+            "pattern": "^[-\\w\\._\\(\\)]+$",
+            "minLength": 1,
+            "maxLength": 90
+          },
+          {
+            "name": "testName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The test name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "microwaveName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "name": "buttonName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The microwave name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/MyCoolActionParameters"
+            },
+            "description": "The parameters required call my cool action."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "My Cool Action Response",
+            "schema": {
+              "$ref": "#/definitions/MyCoolActionParameters"
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ]
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/MyCoolTestProvider/resourceproviders/{testName}/microwaves/{microwaveName}/buttons": {
