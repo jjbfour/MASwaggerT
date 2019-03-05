@@ -33,6 +33,7 @@
         "tags": [
           "microwaves"
         ],
+        "operationId": "testfoo1",
         "description": "Does some cool action.",
         "parameters": [
           {
@@ -99,6 +100,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
+        "operationId": "testfoo12",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
@@ -152,6 +154,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
+        "operationId": "testfoo13",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
@@ -208,6 +211,7 @@
           "microwaves"
         ],
         "description": "Does some cool action.",
+        "operationId": "testfoo14",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
