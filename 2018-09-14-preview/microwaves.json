@@ -355,7 +355,7 @@
         "tags": [
           "microwaves"
         ],
-        "operationId": "listallthisstuff",
+        "operationId": "buttons_List",
         "description": "Does some cool action.",
         "parameters": [
           {
@@ -397,7 +397,10 @@
           "200": {
             "description": "My Cool Action Response",
             "schema": {
-              "$ref": "#/definitions/MyCoolActionParameters"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MyCoolActionParameters"
+              }
             }
           }
         },
