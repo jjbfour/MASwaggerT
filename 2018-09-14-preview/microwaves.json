@@ -398,8 +398,7 @@
           "description": "Resource tags"
         }
       },
-      "description": "My Cool Action Description.",
-      "x-ms-azure-resource": true
+      "description": "My Cool Action Description."
     },
     "NestedCoolObject": {
       "type": "object",
