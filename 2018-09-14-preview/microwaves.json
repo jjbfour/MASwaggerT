@@ -335,6 +335,59 @@
         ]
       }
     },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/MyCoolTestProvider/resourceproviders/{testName}/buttons": {
+      "get": {
+        "tags": [
+          "microwaves"
+        ],
+        "operationId": "Buttons_ListByResourceProvider",
+        "description": "Does some cool action.",
+        "parameters": [
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group. The name is case insensitive.",
+            "pattern": "^[-\\w\\._\\(\\)]+$",
+            "minLength": 1,
+            "maxLength": 90
+          },
+          {
+            "name": "testName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The test name.",
+            "minLength": 3,
+            "maxLength": 64
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "My Cool Action Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MyCoolActionParameters"
+              }
+            }
+          }
+        },
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ]
+      }
+    },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/MyCoolTestProvider/resourceproviders/{testName}/microwaves/{microwaveName}/buttons/{buttonName}": {
       "put": {
         "tags": [
