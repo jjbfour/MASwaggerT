@@ -30,6 +30,7 @@
     "paths": {
       "/mycoolaction": {
         "post": {
+          "operationId": "postMyCoolAction",
           "tags": [
             "mycoolaction"
           ],
