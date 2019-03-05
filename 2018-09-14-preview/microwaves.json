@@ -278,7 +278,7 @@
         "tags": [
           "microwaves"
         ],
-        "operationId": "Buttons_ListByMyCoolActionParameters",
+        "operationId": "Buttons_ListByMicrowave",
         "description": "Does some cool action.",
         "parameters": [
           {
