@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-      "version": "2018-08-14-preview",
+      "version": "hello",
       "title": "My Cool Test Action",
       "description": "My Cool Test Action."
     },
